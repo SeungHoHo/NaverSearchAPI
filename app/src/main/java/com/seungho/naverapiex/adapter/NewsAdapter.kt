@@ -15,7 +15,7 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import kotlin.collections.ArrayList
 
-class NewsAdapter(private val listData: ArrayList<Items>, val context: Context): RecyclerView.Adapter<NewsAdapter.Holder>() {
+class NewsAdapter(private val listData: ArrayList<Items>, private val context: Context): RecyclerView.Adapter<NewsAdapter.Holder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val binding = ItemNewsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
